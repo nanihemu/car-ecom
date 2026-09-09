@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership - Browse Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/"><i class="fas fa-car"></i> CarDealership</a>
+            </div>
+            <div class="nav-menu">
+                <a href="/">Home</a>
+                <a href="/cars" class="active">Cars</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="cars-page">
+        <div class="container">
+            <div class="cars-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters">
+                    <h3><i class="fas fa-filter"></i> Filters</h3>
+                    <div class="filter-group">
+                        <label>Make</label>
+                        <select id="makeFilter">
+                            <option value="">All Makes</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Model</label>
+                        <select id="modelFilter">
+                            <option value="">All Models</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Min Price</label>
+                        <input type="number" id="minPrice" placeholder="Min">
+                    </div>
+                    <div class="filter-group">
+                        <label>Max Price</label>
+                        <input type="number" id="maxPrice" placeholder="Max">
+                    </div>
+                    <div class="filter-group">
+                        <label>Fuel Type</label>
+                        <select id="fuelType">
+                            <option value="">All</option>
+                            <option value="PETROL">Petrol</option>
+                            <option value="DIESEL">Diesel</option>
+                            <option value="ELECTRIC">Electric</option>
+                            <option value="HYBRID">Hybrid</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Transmission</label>
+                        <select id="transmission">
+                            <option value="">All</option>
+                            <option value="MANUAL">Manual</option>
+                            <option value="AUTOMATIC">Automatic</option>
+                            <option value="CVT">CVT</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="loadCarsPage()">
+                        <i class="fas fa-search"></i> Apply Filters
+                    </button>
+                </aside>
+
+                <!-- Cars Grid -->
+                <div class="cars-grid-container">
+                    <div class="cars-header">
+                        <h2>Available Cars</h2>
+                        <span id="carCount">0 cars found</span>
+                    </div>
+                    <div class="car-grid" id="carsGrid">
+                        <!-- Cars loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Your trusted car dealership with years of experience</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="/cars">Browse Cars</a>
+                    <a href="/contact">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@cardealership.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CarDealership. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

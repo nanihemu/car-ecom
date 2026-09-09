@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Car Dealership</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/"><i class="fas fa-car"></i> CarDealership</a>
+            </div>
+            <div class="nav-menu">
+                <a href="/">Home</a>
+                <a href="/cars">Cars</a>
+                <a href="/about">About</a>
+                <a href="/contact" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-page" style="padding: 4rem 0;">
+        <div class="container">
+            <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Contact Us</h1>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h3 style="color: #1f2937; margin-bottom: 1.5rem;">Get in Touch</h3>
+                    <p style="padding: 0.5rem 0;">
+                        <i class="fas fa-map-marker-alt" style="color: #2563eb; width: 25px;"></i>
+                        123 Main Street, City, State 12345
+                    </p>
+                    <p style="padding: 0.5rem 0;">
+                        <i class="fas fa-phone" style="color: #2563eb; width: 25px;"></i>
+                        +1 234 567 890
+                    </p>
+                    <p style="padding: 0.5rem 0;">
+                        <i class="fas fa-envelope" style="color: #2563eb; width: 25px;"></i>
+                        info@cardealership.com
+                    </p>
+                    
+                    <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
+                        <h4 style="color: #1f2937; margin-bottom: 0.5rem;">Business Hours</h4>
+                        <p style="color: #4b5563;">Monday - Friday: 9:00 AM - 8:00 PM</p>
+                        <p style="color: #4b5563;">Saturday: 10:00 AM - 6:00 PM</p>
+                        <p style="color: #4b5563;">Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h3 style="color: #1f2937; margin-bottom: 1.5rem;">Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group" style="margin-bottom: 1rem;">
+                            <input type="text" id="name" placeholder="Your Name" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1rem;">
+                            <input type="email" id="email" placeholder="Your Email" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1rem;">
+                            <input type="tel" id="phone" placeholder="Phone Number" style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1rem;">
+                            <textarea id="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; font-family: inherit;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; background: #2563eb; color: white; padding: 0.75rem;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Your trusted car dealership with years of experience</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="/cars">Browse Cars</a>
+                    <a href="/contact">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@cardealership.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CarDealership. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
